@@ -118,5 +118,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 TEMPLATES[0]['DIRS'] = [BASE_DIR / 'templates']
 
 CSRF_TRUSTED_ORIGINS = [
-    "https//istesahne-production.up/railway.app",
+    "https//istesahne-production.up.railway.app",
 ]
