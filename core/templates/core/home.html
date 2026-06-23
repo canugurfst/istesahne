@@ -2,8 +2,30 @@
 
 {% block body %}
 
-<h1>İşte Sahne</h1>
+<div class="py-5 text-center">
+    <h1 class="display-3">İşte Sahne</h1>
 
-<p>Site is working.</p>
+    <p class="lead">
+        Tiyatro, sahne sanatları ve yaratıcı projeler.
+    </p>
+
+    <h2 class="mt-5 mb-4">Latest Videos</h2>
+    <div class="row">
+        {% for video in latest_videos %}
+        <div class="col-md-6 mx-auto">
+            <div class="card-body">
+                <h5>{{ video.title }}</h5>
+                <iframe
+                    width="100%"
+                    height="315"
+                    src="https://www.youtube.com/embed/{{ video.youtube_id }}"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>
 
 {% endblock %}
