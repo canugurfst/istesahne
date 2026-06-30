@@ -12,7 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-7)(m#u_w!^o4&y8vg_azs=&05c3oquk$%pemv^6$5z3@zwypm_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 SECURE_REFERRER_POLICY = "strict-origin-when-cross-origin"
 

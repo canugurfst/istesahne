@@ -3,7 +3,7 @@ from django.shortcuts import render
 from videos.models import Video
 
 def home(request):
-    page = PageContent.objects.get(page="home")
+    page = PageContent.objects.filter(page="home").first()
 
     latest_videos = Video.objects.order_by('-created_at')[:3]
 
